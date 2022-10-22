@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .happy {
+    background-color: coral;
+}
+.ind {
+    background-color: aliceblue;
+}
+.day {
+    background-color: darkgreen;
+}
+.car {
+    margin-left: 500px;
+    margin-top: -300px;
+    animation-name:car;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.city {
+    margin-top: -1000px;
+}
+.wheel {
+    margin-left: 535px;
+    margin-top: -70px;
+    animation-name: wheel;
+    animation-iteration-count: infinite;
+    transition-duration: 5s;
+}
+@keyframes wheel {
+    100%
+    {transform: rotate(360deg);}
+}
+.wheel-1 {
+    margin-left: 750px;
+    margin-top: -55px;
+    animation-name: wheel-1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes wheel-1 {
+    100%
+    {transform: rotate(360deg);}
+}
+.flag {
+    margin-left: 750px;
+    margin-top: -200px;
+}
+.sun {
+    margin-left:1100px;
+    margin-top: -400px;
+}
+</style>
+<body>
+
+   <div class="main-container-grid">
+        <div class="india">
+            <h1><span class="happy">HAPPY</span> <span class="ind">INDEPENDENCE <span class="day"> DAY</span></h1>
+        </div>
+        <img src="./assets/sky.jpg" height="auto" width="">
+    </div>
+    <div class="city">
+        <img src="assets/city (1).png">
+    </div>
+    <div class="road">
+        <img src="assets/road.jpg">
+    </div>
+    <div class="car">
+        <img src="assets/car.png" height="150px" width="350px">
+    </div>
+    <div class="wheel">
+        <img src="assets/wheel.png" height="50px" width="50px">
+    </div>
+    <div class="wheel-1">
+        <img src="assets/wheel.png" height="50px" width="50px">
+    </div>
+    <div class="flag">
+        <img src="assets/flag.png" height="150px" width="100px">
+    </div>
+    <div class="sun">
+        <img src="assets/sun (1).png" height="50px" width="50px">
+    </div> 
+</body>
+</html>
