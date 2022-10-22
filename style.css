@@ -302,15 +302,15 @@ li {
 }
 @keyframes wheel-1 {
     100%
-    {transform: rotate(360deg);}
+    {transform: rotate(360deg) ;}
 }
 
 .road {
     z-index:auto;
     animation-name: road;
     animation-duration: 20s;
-    transform:translate3d(300);
-    background-repeat: repeat-x;
+    /* transform:translate-x(300); */
+    /* background-repeat: repeat-x; */
     /* transform: translateX(-200); */
     /* animation-direction: alternate; */
     /* transform:rotateX('30deg') */
@@ -318,7 +318,7 @@ li {
 }
 @keyframes road {
     100%
-    {transform:scaleX(-1500);}
+    {transform:scaleX(3) ;}
 }
 
 .city {
@@ -326,22 +326,34 @@ li {
     animation-name: city;
     animation-duration: 20s;
     animation-iteration-count: infinite;
+    transform-origin: left;
 }
 @keyframes city {
     100%
-    {transform:transition(10s);}
+    {transform: scaleX(3);}
 
 
 }
 .sun {
     animation-name: sun;
-    animation-duration:10s;
+    animation-duration:15s;
     /* animation-delay: 5s; */
     animation-iteration-count: infinite;
-    transition: ease-in-out;
+    transition: ease;
     /* animation-direction: alternate-reverse; */
+    transform-origin: left;
+    animation-delay: .5s;
 }
 @keyframes sun {
-    from
-    {}
+    100%
+    {transform: rotate(90deg);}
+
+}
+.background-container {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ4pfWVhYG70G6a3a0VccoYDr3iA9UA2hIAQ&usqp=CAU);
+    height: auto;
+    width:auto;
+}
+.india {
+    margin-bottom: -100px;
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel>
 </head>
 <style>
     .happy {
@@ -25,6 +26,19 @@
 }
 .city {
     margin-top: -1000px;
+    animation-name: city;
+    animation: move 4s linear infinite;
+    /* margin-left: 50vh;
+    margin-top: 5; */
+    transform: translateX() translateY();
+}
+@keyframes city {
+    50%
+    {transform: translateX(0) translateY(0);
+    }
+    /* 50.001%
+    {transform: translateX(-60%) translateY(-50%);
+    } */
 }
 .wheel {
     margin-left: 535px;
@@ -41,8 +55,8 @@
     margin-left: 750px;
     margin-top: -55px;
     animation-name: wheel-1;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    /* animation-iteration-count: infinite; */
 }
 @keyframes wheel-1 {
     100%
@@ -51,11 +65,32 @@
 .flag {
     margin-left: 750px;
     margin-top: -200px;
+
 }
 .sun {
     margin-left:1100px;
     margin-top: -400px;
+    animation-name: sun;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
 }
+.main-container-grid {
+    position: absolute;
+}
+.road {
+    z-index: 1;
+    animation-name: sun;
+    position:;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes sun {
+    100%
+    {transform: translateX();}
+}
+
 </style>
 <body>
 
@@ -64,27 +99,28 @@
             <h1><span class="happy">HAPPY</span> <span class="ind">INDEPENDENCE <span class="day"> DAY</span></h1>
         </div>
         <img src="./assets/sky.jpg" height="auto" width="">
+        <div class="city">
+            <img src="assets/city (1).png">
+        </div>
+        <div class="road">
+            <img src="assets/road.jpg">
+        </div>
+        <div class="car">
+            <img src="assets/car.png" height="150px" width="350px">
+        </div>
+        <div class="wheel">
+            <img src="assets/wheel.png" height="50px" width="50px">
+        </div>
+        <div class="wheel-1">
+            <img src="assets/wheel.png" height="50px" width="50px">
+        </div>
+        <div class="flag">
+            <img src="assets/flag.png" height="150px" width="100px">
+        </div>
+        <div class="sun">
+            <img src="assets/sun (1).png" height="50px" width="50px">
+        </div> 
     </div>
-    <div class="city">
-        <img src="assets/city (1).png">
-    </div>
-    <div class="road">
-        <img src="assets/road.jpg">
-    </div>
-    <div class="car">
-        <img src="assets/car.png" height="150px" width="350px">
-    </div>
-    <div class="wheel">
-        <img src="assets/wheel.png" height="50px" width="50px">
-    </div>
-    <div class="wheel-1">
-        <img src="assets/wheel.png" height="50px" width="50px">
-    </div>
-    <div class="flag">
-        <img src="assets/flag.png" height="150px" width="100px">
-    </div>
-    <div class="sun">
-        <img src="assets/sun (1).png" height="50px" width="50px">
-    </div> 
+   
 </body>
 </html>
